@@ -2,7 +2,8 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
-    entry: "./assets/js/functions.js",
+    entry: './assets/js/build.js'
+    ,
     output: {
         path: __dirname,
         filename: "./_site/assets/js/build.js"
@@ -25,7 +26,7 @@ module.exports = {
              },
              {
                include: /\.pug/,
-               loader: 'file-loader?name=_site/index.html!pug-html-loader?exports=false'
+               loader: 'file-loader?name=_site/[name].html!pug-html-loader?exports=false'
                /* 'file-loader?name=index.html!extract-loader!pug-html-loader?exports=false!html-loader' */
              },
               {
@@ -37,6 +38,7 @@ module.exports = {
                 }
               }
         ]
+
     },
     plugins: [
       new ExtractTextPlugin('_site/assets/css/style.css'),

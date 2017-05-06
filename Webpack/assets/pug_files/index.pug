@@ -9,17 +9,28 @@ html(lang='en')
     //if lt IE 9
       script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js')
   body
-    header 
-      ul
-        li.donate#button DONATE
-        li Contact Us
-        li Scholarships
-        li News
-        li Events
-        li About Us
+    header
+      ul 
+        a(href="donate.html", target="_blank") 
+         li.donate#button DONATE
+        a(href="contact.html", target="_blank") 
+          li Contact Us
+        a(href="scholarship.html", target="_blank")
+          li Scholarships
+        a(href="news.html", target="_blank")
+          li News
+        a(href="events.html", target="_blank")
+          li Events
+          li.about
+            ul.drop-menu About Us
+              li.a Our Mission
+              li.b Our Giving
         img(src="assets/img/Logo1.jpg").logo1
     img(src="assets/img/butterFly1.jpg")#butterfly1
     div.headerimg
       img(src="assets/img/Logo2.jpg")#logo2
     img(src="assets/img/butterfly2.jpg")#butterfly2
+    div
+      h2 Meet Alyssa
+      img(src="assets/img/alyssa.jpg").alyssa
     script(src='assets/js/scripts.js')
