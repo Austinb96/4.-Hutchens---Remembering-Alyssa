@@ -1,0 +1,56 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title The HTML5 Herald
+    meta(name='description', content='The HTML5 Herald')
+    meta(name='Austin Babcock', content='SitePoint')
+    link(rel='stylesheet', href='assets/css/style.css')
+    //if lt IE 9
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js')      
+  body
+    header
+      ul 
+        
+        a(href="donate.html"): li.donate#button DONATE        
+        a(href="contact.html"): li Contact Us
+        a(href="scholarship.html"): li Scholarships
+        a(href="news.html"): li News
+        li.about
+          ul.drop-menu Events
+            li.c 
+            li.about#a
+              ul.drop-menu-sub#sub: a(href="alyssaride.html", onclick="sub()")  Alyssa's Ride
+                a(href="alyssaride.html"): li#suba Event
+                a(href="sponsors.html"): li#subb Sponsors
+                a(href="shirt.html"): li#subc Shirts
+                a(href="media.html"): li#subd Media
+        li.about
+          ul.drop-menu#d: a(href="#", onclick="myFunction()") About Us
+            li.c
+            a(href="ourmission.html"): li.a Our Mission
+            a(href="ourgiving.html"): li.b Our Giving
+            
+            
+            img(src="assets/img/fb.jpg")#fb
+            script(src='assets/js/scripts.js')
+            script.
+              function myFunction() {
+                var x = document.getElementById('d');
+              if (x.className === 'drop-menu') {
+                x.className = 'drop-menu-down';
+              } else {
+              
+                x.className = 'drop-menu';
+                }
+                }
+              
+                function sub() {
+                  var x = document.getElementById('sub');
+                if (x.className === 'drop-menu-sub') {
+                  x.className = 'drop-menu-down';
+                } else {
+                
+                  x.className = 'drop-menu-sub';
+                  }
+                  }  

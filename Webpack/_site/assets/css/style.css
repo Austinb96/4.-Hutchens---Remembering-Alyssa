@@ -390,24 +390,34 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 #button {
+  text-align: center;
+  width: 150px;
   background: #FF8300;
   border-radius: 20px;
   box-shadow: 3px 3px 5px grey, inset 0 -1px 1px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.8);
   padding: 4px 30px;
   color: black; }
+ul #button {
+  width: inherit; }
 #button:hover {
   color: black;
   text-shadow: 1px 1px 1px grey;
   box-shadow: none; }
 header ul a {
   color: black; }
+#fb {
+  width: 36px;
+  height: 36px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px; }
 .logo1 {
   float: left;
   width: 200px;
   height: 70px; }
 .headerimg {
   width: 100%;
-  clear: left;
+  clear: right;
   margin: 100px auto;
   text-align: center; }
 #butterfly1 {
@@ -434,6 +444,18 @@ header ul a {
   width: 319px;
   height: 212px;
   text-align: center; }
+#event {
+  width: 674px;
+  height: 364px;
+  margin-top: 100px; }
+#eventheader {
+  clear: right;
+  text-align: center; }
+#eventpic {
+  padding-right: 15px;
+  float: left;
+  width: 312px;
+  height: 209px; }
 #logosmall {
   width: 600px;
   height: 362px; }
@@ -625,3 +647,16 @@ input#button {
   margin-top: -25px; }
 .otherdonation#b3 {
   margin-top: -15px; }
+#eventcontent {
+  width: 640px;
+  margin: 0 auto; }
+#eventcontent p {
+    width: 640px; }
+#eventregister {
+  text-align: center;
+  margin: 0 auto;
+  width: 640px; }
+#eventregister p {
+    margin: 0 auto 15px auto; }
+#eventregister a {
+    padding-bottom: 50px; }
