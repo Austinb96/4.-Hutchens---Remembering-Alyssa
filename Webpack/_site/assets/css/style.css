@@ -456,6 +456,33 @@ header ul a {
   float: left;
   width: 312px;
   height: 209px; }
+#contactlogo1 {
+  margin-bottom: 25px;
+  width: 374px;
+  height: 108px; }
+#contactheart {
+  width: 285px;
+  height: 222px; }
+#newsheader {
+  padding-top: 100px;
+  text-align: center;
+  clear: right; }
+#newsheader img {
+    width: 640px;
+    height: 409px; }
+#newspic1, #newspic2 {
+  float: left;
+  margin-right: 20px;
+  width: 298px;
+  height: 240px;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px grey; }
+#newspic1 img, #newspic2 img {
+    width: 320px;
+    height: 285px; }
+#newspic2 img {
+  width: 298px;
+  height: 240px; }
 #logosmall {
   width: 600px;
   height: 362px; }
@@ -660,3 +687,33 @@ input#button {
     margin: 0 auto 15px auto; }
 #eventregister a {
     padding-bottom: 50px; }
+div#contactinfo {
+  text-align: center;
+  width: 640px;
+  margin: -100px auto 0 auto; }
+div#contactinfo p {
+    margin-top: -25px; }
+div#contactinfo p.space {
+    margin-bottom: 40px; }
+#media2016 {
+  clear: right;
+  text-align: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px; }
+#media2016 #vid1, #media2016 #vid2 {
+    padding: 15px;
+    width: 500px;
+    height: 350px; }
+#mediabuttons {
+  width: 640px;
+  margin: 0 auto; }
+#mediabuttons p {
+    position: absolute;
+    float: left;
+    margin-top: 25px; }
+#mediabuttons #button.alb2 {
+    left: calc(50% + 100px); }
+#newscontent {
+  margin: 0 auto;
+  width: 640px; }

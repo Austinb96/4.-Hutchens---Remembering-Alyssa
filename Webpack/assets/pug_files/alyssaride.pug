@@ -29,31 +29,7 @@ html(lang='en')
           ul.drop-menu#d: a(href="#", onclick="myFunction()") About Us
             li.c
             a(href="ourmission.html"): li.a Our Mission
-            a(href="ourgiving.html"): li.b Our Giving
-            
-            
-            img(src="assets/img/fb.jpg")#fb
-            script(src='assets/js/scripts.js')
-            script.
-              function myFunction() {
-                var x = document.getElementById('d');
-              if (x.className === 'drop-menu') {
-                x.className = 'drop-menu-down';
-              } else {
-              
-                x.className = 'drop-menu';
-                }
-                }
-              
-                function sub() {
-                  var x = document.getElementById('sub');
-                if (x.className === 'drop-menu-sub') {
-                  x.className = 'drop-menu-down';
-                } else {
-                
-                  x.className = 'drop-menu-sub';
-                  }
-                  }  
+            a(href="ourgiving.html"): li.b Our Giving\
   div#eventheader
     img(src="assets/img/event.jpg")#event
   div#eventcontent
@@ -69,7 +45,30 @@ html(lang='en')
     
     a(href="http://", target="_blank") Allready Registered?
 
-
+    
+    
+  a(href="https://www.facebook.com/Remembering-Alyssa-931441953599142/", target="_blank"): img(src="assets/img/fb.jpg")#fb
+  script(src='assets/js/scripts.js')
+  script.
+    function myFunction() {
+      var x = document.getElementById('d'); 
+    if (x.className === 'drop-menu') {
+      x.className = 'drop-menu-down';
+    } else {
+    
+      x.className = 'drop-menu';
+      }
+      }
+    
+      function sub() {
+        var x = document.getElementById('sub');
+      if (x.className === 'drop-menu-sub') {
+        x.className = 'drop-menu-down';
+      } else {
+      
+        x.className = 'drop-menu-sub';
+        }
+        }  
 
 
 

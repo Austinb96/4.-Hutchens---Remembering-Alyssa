@@ -58,25 +58,25 @@ html(lang='en')
     p.otherdonation#b3 Remembering Alyssa, Inc. Donation
     p.otherdonation#b2  P.O.Box 4
     p.otherdonation#bottom Easton. KS 66020
-  img(src="assets/img/fb.jpg")#fb
-  script(src='assets/js/scripts.js')
-  script.
-    function myFunction() {
-      var x = document.getElementById('d');
-    if (x.className === 'drop-menu') {
-      x.className = 'drop-menu-down';
-    } else {
-    
-      x.className = 'drop-menu';
-      }
-      }
-    
-      function sub() {
-        var x = document.getElementById('sub');
-      if (x.className === 'drop-menu-sub') {
+    a(href="https://www.facebook.com/Remembering-Alyssa-931441953599142/", target="_blank"): img(src="assets/img/fb.jpg")#fb
+    script(src='assets/js/scripts.js')
+    script.
+      function myFunction() {
+        var x = document.getElementById('d');
+      if (x.className === 'drop-menu') {
         x.className = 'drop-menu-down';
       } else {
       
-        x.className = 'drop-menu-sub';
+        x.className = 'drop-menu';
         }
-        }  
+        }
+      
+        function sub() {
+          var x = document.getElementById('sub');
+        if (x.className === 'drop-menu-sub') {
+          x.className = 'drop-menu-down';
+        } else {
+        
+          x.className = 'drop-menu-sub';
+          }
+          }  

@@ -30,27 +30,36 @@ html(lang='en')
             li.c
             a(href="ourmission.html"): li.a Our Mission
             a(href="ourgiving.html"): li.b Our Giving
+    div#mediabg
+      img(src="assets/img/butterFly1.jpg")#butterfly1
+      img(src="assets/img/butterfly2.jpg")#butterfly2
+
+    div#media2016
+      h2 2016 Alyssa's Ride  
+      iframe(src='https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F931441953599142%2Fvideos%2F1084941498249186%2F&show_text=0&width=400', width='500', height='350', style='border:none;overflow:hidden', scrolling='no', frameborder='1', allowtransparency='true', allowfullscreen='true')#vid1
+      iframe(src='https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F931441953599142%2Fvideos%2F1084940848249251%2F&show_text=0&width=400', width='500', height='350', style='border:none;overflow:hidden', scrolling='no', frameborder='1', allowtransparency='true', allowfullscreen='true')#vid2
+      div#mediabuttons
+        p#button.alb1 Album 1
+        p#button.alb2 Album 2
+  a(href="https://www.facebook.com/Remembering-Alyssa-931441953599142/", target="_blank"): img(src="assets/img/fb.jpg")#fb
+  script(src='assets/js/scripts.js')
+    script.
+          function myFunction() {
+          var x = document.getElementById('d');
+          if (x.className === 'drop-menu') {
+            x.className = 'drop-menu-down';
+            } else {
             
+            x.className = 'drop-menu';
+            }
+            }
             
-            img(src="assets/img/fb.jpg")#fb
-            script(src='assets/js/scripts.js')
-            script.
-              function myFunction() {
-                var x = document.getElementById('d');
-              if (x.className === 'drop-menu') {
-                x.className = 'drop-menu-down';
+            function sub() {
+            var x = document.getElementById('sub');
+            if (x.className === 'drop-menu-sub') {
+              x.className = 'drop-menu-down';
               } else {
               
-                x.className = 'drop-menu';
-                }
-                }
-              
-                function sub() {
-                  var x = document.getElementById('sub');
-                if (x.className === 'drop-menu-sub') {
-                  x.className = 'drop-menu-down';
-                } else {
-                
-                  x.className = 'drop-menu-sub';
-                  }
-                  }  
+              x.className = 'drop-menu-sub';
+              }
+              }  
