@@ -417,7 +417,7 @@ header ul a {
   width: 200px;
   height: 70px; }
 .headerimg {
-  width: 100%;
+  width: 640px;
   clear: right;
   margin: 100px auto;
   text-align: center; }
@@ -670,6 +670,8 @@ li:hover > ul.drop-menu li, li:active > ul.drop-menu li {
 h2, h3, h4 {
   text-align: center;
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); }
+.hide {
+  display: none; }
 #donatetop {
   width: 50%;
   display: block;
