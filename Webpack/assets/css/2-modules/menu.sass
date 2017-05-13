@@ -61,6 +61,7 @@ header
   margin-right: 30px
 @include tablet
   ul.main
+    border: 1px solid red
     width: 150px
     margin-right: -30px
     display: none
@@ -97,8 +98,7 @@ header
         list-style: none
         text-align: center
         li
-          margin-top: -1px
-          border: 1px solid black
+          margin-top: 3.5px
           width: 100px
         #button
           width: 60px
@@ -106,9 +106,41 @@ header
           box-shadow: none
           margin-left: -10px
         .dropdown
+          margin-bottom: -5px
           div
-            width: 100px
           ul
-            display: none
-      .subdropdown
-          display: none
+            display: flex
+            flex-direction: column
+            li
+              display: none
+          &.open , &:hover
+            ul
+              padding: 5px
+              padding-right: 7px
+              position: absolute
+              width: 100px
+              right: 132px
+              >li , a
+                margin: 0
+                display: block
+                margin-top: -1px
+              .subdrop
+                margin-top: 20px
+                margin-left: -10px
+              a li
+                margin: 2.5px 0
+                border: none
+                display: block
+              .hide , .hide:hover
+                border: none
+                background: none
+              .subdropdown
+                display: none
+              .subdrop:hover
+                .subdropdown
+                  display: block
+                  margin-right: -20px
+
+      .donate
+        border-radius: 20px !important
+        margin: 5px 0 0 15px !important

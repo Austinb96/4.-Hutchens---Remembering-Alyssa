@@ -325,6 +325,10 @@ template {
  */
 [hidden] {
   display: none; }
+html {
+  overflow-x: hidden; }
+body {
+  overflow-x: hidden; }
 .gigantic, .huge, .large, .bigger, .big, h1, h2, h3, h4, h5, h6 {
   color: #FF8300;
   font-weight: bold; }
@@ -592,6 +596,7 @@ header .subdropdown {
   margin-right: 30px; }
 @media only screen and (max-width: 970px) {
   ul.main {
+    border: 1px solid red;
     width: 150px;
     margin-right: -30px;
     display: none; }
@@ -634,20 +639,53 @@ header .subdropdown {
       list-style: none;
       text-align: center; }
       div.hamburger.open ul li, div.hamburger:hover ul li {
-        margin-top: -1px;
-        border: 1px solid black;
+        margin-top: 3.5px;
         width: 100px; }
       div.hamburger.open ul #button, div.hamburger:hover ul #button {
         width: 60px;
         border-radius: 0px;
         box-shadow: none;
         margin-left: -10px; }
-      div.hamburger.open ul .dropdown div, div.hamburger:hover ul .dropdown div {
-        width: 100px; }
-      div.hamburger.open ul .dropdown ul, div.hamburger:hover ul .dropdown ul {
-        display: none; }
-    div.hamburger.open .subdropdown, div.hamburger:hover .subdropdown {
-      display: none; } }
+      div.hamburger.open ul .dropdown, div.hamburger:hover ul .dropdown {
+        margin-bottom: -5px; }
+        div.hamburger.open ul .dropdown ul, div.hamburger:hover ul .dropdown ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+          div.hamburger.open ul .dropdown ul li, div.hamburger:hover ul .dropdown ul li {
+            display: none; }
+        div.hamburger.open ul .dropdown.open ul, div.hamburger.open ul .dropdown:hover ul, div.hamburger:hover ul .dropdown.open ul, div.hamburger:hover ul .dropdown:hover ul {
+          padding: 5px;
+          padding-right: 7px;
+          position: absolute;
+          width: 100px;
+          right: 132px; }
+          div.hamburger.open ul .dropdown.open ul > li, div.hamburger.open ul .dropdown.open ul a, div.hamburger.open ul .dropdown:hover ul > li, div.hamburger.open ul .dropdown:hover ul a, div.hamburger:hover ul .dropdown.open ul > li, div.hamburger:hover ul .dropdown.open ul a, div.hamburger:hover ul .dropdown:hover ul > li, div.hamburger:hover ul .dropdown:hover ul a {
+            margin: 0;
+            display: block;
+            margin-top: -1px; }
+          div.hamburger.open ul .dropdown.open ul .subdrop, div.hamburger.open ul .dropdown:hover ul .subdrop, div.hamburger:hover ul .dropdown.open ul .subdrop, div.hamburger:hover ul .dropdown:hover ul .subdrop {
+            margin-top: 20px;
+            margin-left: -10px; }
+          div.hamburger.open ul .dropdown.open ul a li, div.hamburger.open ul .dropdown:hover ul a li, div.hamburger:hover ul .dropdown.open ul a li, div.hamburger:hover ul .dropdown:hover ul a li {
+            margin: 2.5px 0;
+            border: none;
+            display: block; }
+          div.hamburger.open ul .dropdown.open ul .hide, div.hamburger.open ul .dropdown.open ul .hide:hover, div.hamburger.open ul .dropdown:hover ul .hide, div.hamburger.open ul .dropdown:hover ul .hide:hover, div.hamburger:hover ul .dropdown.open ul .hide, div.hamburger:hover ul .dropdown.open ul .hide:hover, div.hamburger:hover ul .dropdown:hover ul .hide, div.hamburger:hover ul .dropdown:hover ul .hide:hover {
+            border: none;
+            background: none; }
+          div.hamburger.open ul .dropdown.open ul .subdropdown, div.hamburger.open ul .dropdown:hover ul .subdropdown, div.hamburger:hover ul .dropdown.open ul .subdropdown, div.hamburger:hover ul .dropdown:hover ul .subdropdown {
+            display: none; }
+          div.hamburger.open ul .dropdown.open ul .subdrop:hover .subdropdown, div.hamburger.open ul .dropdown:hover ul .subdrop:hover .subdropdown, div.hamburger:hover ul .dropdown.open ul .subdrop:hover .subdropdown, div.hamburger:hover ul .dropdown:hover ul .subdrop:hover .subdropdown {
+            display: block;
+            margin-right: -20px; }
+    div.hamburger.open .donate, div.hamburger:hover .donate {
+      border-radius: 20px !important;
+      margin: 5px 0 0 15px !important; } }
 h2, h3, h4 {
   text-align: center;
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); }
