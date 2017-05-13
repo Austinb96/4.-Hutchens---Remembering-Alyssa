@@ -1,0 +1,48 @@
+
+a(href="donate.html"): li.donate#button DONATE
+a(href="contact.html"): li.hide Contact Us
+a(href="scholarship.html"): li.hide Scholarships
+a(href="news.html"): li.hide News
+li.about
+  ul.drop-menu.hide Events
+    li.c
+    li.about#a
+      ul.drop-menu-sub#sub: a(href="alyssaride.html", onclick="sub()")  Alyssa's Ride
+        a(href="alyssaride.html"): li#suba Event
+        a(href="sponsors.html"): li#subb Sponsors
+        a(href="shirt.html"): li#subc Shirts
+        a(href="media.html"): li#subd Media
+li.about
+  ul.drop-menu#d.hide: a(href="#", onclick="myFunction()") About Us
+    li.c
+    a(href="ourmission.html"): li.a Our Mission
+    a(href="ourgiving.html"): li.b Our Giving
+
+
+
+
+
+    .drop-menu
+      li
+        opacity: 0
+        transform-origin: top center
+
+        @for $i from 1 through 6
+          &:nth-child(#{$i})
+            animation:
+              name: menu
+              duration: 300ms
+              delay: (300ms * $i) - 300
+              timing-funtion: ease-in-out
+              fill-mode: forwards
+    @keyframes menu
+      0%
+        opacity: 0
+        transform: rotateX(-90deg)
+
+        60%
+          transform: rotateX(50deg)
+
+      100%
+        transform: rotatX(0deg)
+        opacity: 1
