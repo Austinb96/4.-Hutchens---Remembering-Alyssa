@@ -1,6 +1,5 @@
 header
   ul
-    margin-right: 15px
     display: flex
     flex-direction: row-reverse
     list-style: none
@@ -8,7 +7,7 @@ header
     text-align: center
     li
       margin-top: 10px
-      width: 100px
+      margin-left: 25px
     .dropdown
       div
       ul
@@ -19,10 +18,13 @@ header
       &.open , &:hover
         ul
           position: absolute
+          width: 100px
           >li , a
+            margin-left: -25px
+            width: 100px
             background: white
             display: block
-            padding: 5px
+            padding: 4px
             margin-top: -1px
             border: 1px solid grey
             &:hover
@@ -35,9 +37,7 @@ header
               border-top-left-radius: 20px
               border-top-right-radius: 20px
           a li
-            width: 100%
-            margin-top: 2.5px
-            margin-bottom: 2.5px
+            margin: 2.5px 5px
             display: block
           a
             padding: 0px
@@ -57,9 +57,8 @@ header
               display: block
   .subdropdown
       display: none
-.active
-  background-color: $primary-color
-  color: black
+.donate
+  margin-right: 30px
 @include tablet
   ul.main
     width: 150px

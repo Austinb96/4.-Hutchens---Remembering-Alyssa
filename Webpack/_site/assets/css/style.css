@@ -349,6 +349,7 @@ template {
   font-size: 10px;
   line-height: 1.2; }
 p {
+  background: white;
   text-indent: 10px;
   margin: 0 0 20px 0;
   font-size: 16px; }
@@ -419,10 +420,11 @@ header ul a {
   width: 260px;
   height: 80px; }
 .headerimg {
-  width: 640px;
-  clear: right;
+  text-align: center;
+  width: 800px;
   margin: 100px auto;
-  text-align: center; }
+  padding-top: 100px;
+  clear: right; }
 #butterfly1 {
   z-index: -1;
   position: absolute;
@@ -465,7 +467,7 @@ header ul a {
   height: 364px;
   margin-top: 100px; }
 #eventheader {
-  clear: right;
+  clear: left;
   text-align: center; }
 #eventpic {
   padding-right: 15px;
@@ -515,15 +517,14 @@ header ul a {
   float: right;
   width: 229px;
   height: 237px; }
-#bigarc {
-  position: absolute;
-  left: calc(50% - 247.5px);
-  top: 450px; }
+#ourmissionheader {
+  text-align: center;
+  margin: 0 auto;
+  width: 800px; }
 #logosmall {
   width: 600px;
   height: 362px; }
 header ul {
-  margin-right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,7 +537,7 @@ header ul {
   text-align: center; }
 header ul li {
     margin-top: 10px;
-    width: 100px; }
+    margin-left: 25px; }
 header ul .dropdown ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -548,11 +549,14 @@ header ul .dropdown ul {
 header ul .dropdown ul li {
       display: none; }
 header ul .dropdown.open ul, header ul .dropdown:hover ul {
-    position: absolute; }
+    position: absolute;
+    width: 100px; }
 header ul .dropdown.open ul > li, header ul .dropdown.open ul a, header ul .dropdown:hover ul > li, header ul .dropdown:hover ul a {
+      margin-left: -25px;
+      width: 100px;
       background: white;
       display: block;
-      padding: 5px;
+      padding: 4px;
       margin-top: -1px;
       border: 1px solid grey; }
 header ul .dropdown.open ul > li:hover, header ul .dropdown.open ul a:hover, header ul .dropdown:hover ul > li:hover, header ul .dropdown:hover ul a:hover {
@@ -565,9 +569,7 @@ header ul .dropdown.open ul > li:nth-of-type(2), header ul .dropdown.open ul a:n
         border-top-left-radius: 20px;
         border-top-right-radius: 20px; }
 header ul .dropdown.open ul a li, header ul .dropdown:hover ul a li {
-      width: 100%;
-      margin-top: 2.5px;
-      margin-bottom: 2.5px;
+      margin: 2.5px 5px;
       display: block; }
 header ul .dropdown.open ul a, header ul .dropdown:hover ul a {
       padding: 0px; }
@@ -586,9 +588,8 @@ header ul .dropdown.open ul .subdrop:hover .subdropdown, header ul .dropdown:hov
       display: block; }
 header .subdropdown {
   display: none; }
-.active {
-  background-color: #FF8300;
-  color: black; }
+.donate {
+  margin-right: 30px; }
 @media only screen and (max-width: 970px) {
   ul.main {
     width: 150px;
