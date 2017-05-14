@@ -4,9 +4,11 @@ html(lang='en')
     meta(charset='utf-8')
     title The HTML5 Herald
     meta(name='description', content='The HTML5 Herald')
-    meta(name='viewport' content="width=device-width, initial-scale=1")
+    meta(name='viewport' content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi")
     meta(name='Austin Babcock', content='SitePoint')
     link(rel='stylesheet', href='assets/css/style.css')
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+      
     //if lt IE 9
       script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js')      
   body
@@ -32,25 +34,25 @@ html(lang='en')
         Alyssa Lane Hutchens was lifted to heaven by her angels after sadly ending her life on November 10, 2014, at the short age of 16, after battling chronic medical issues.  She never got the chance to attend her high school prom, a spring break school trip to Italy, high school graduation, college, or to pursue that dream she worked so hard for of walking through the doors at Children’s Mercy as a Critical Care Transport Nurse.  
       p  Thank you to all those who remember Alyssa by changing the lives of others in her memory. She will always be our Super Hero! 
       
-  a(href="https://www.facebook.com/Remembering-Alyssa-931441953599142/", target="_blank"): img(src="assets/img/fb.jpg")#fb
-  script(src='assets/js/functions.js')
-  script.
-    function myFunction() {
-      var x = document.getElementById('d');
-    if (x.className === 'drop-menu') {
-      x.className = 'drop-menu-down';
-    } else {
-    
-      x.className = 'drop-menu';
-      }
-      }
-    
-      function sub() {
-        var x = document.getElementById('sub');
-      if (x.className === 'drop-menu-sub') {
+    a(href="https://www.facebook.com/Remembering-Alyssa-931441953599142/", target="_blank"): img(src="assets/img/fb.jpg")#fb
+    script(src='assets/js/functions.js')
+    script.
+      function myFunction() {
+        var x = document.getElementById('d');
+      if (x.className === 'drop-menu') {
         x.className = 'drop-menu-down';
       } else {
       
-        x.className = 'drop-menu-sub';
+        x.className = 'drop-menu';
         }
-        }  
+        }
+      
+        function sub() {
+          var x = document.getElementById('sub');
+        if (x.className === 'drop-menu-sub') {
+          x.className = 'drop-menu-down';
+        } else {
+        
+          x.className = 'drop-menu-sub';
+          }
+          }  

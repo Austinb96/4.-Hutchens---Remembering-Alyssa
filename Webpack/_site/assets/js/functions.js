@@ -1,7 +1,6 @@
-var menus = document.getElementsByClassName ('hamburger');
-
-[].forEach.call(menus, function (m) {
-  m.addEventListener( 'click' , function () {
-    m.classList.toggle('open');
-  });
+$(document).ready(function(){
+    $(".hamburger").click(function(){
+        $(".hamburger").toggleClass("open");
+        $(".main").toggleClass("mainopen");
+    });
 });

@@ -528,164 +528,200 @@ header ul a {
 #logosmall {
   width: 600px;
   height: 362px; }
-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  list-style: none;
-  float: right;
-  text-align: center; }
-header ul li {
-    margin-top: 10px;
-    margin-left: 25px; }
-header ul .dropdown ul {
+header {
+  width: 100%; }
+header ul.main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-header ul .dropdown ul li {
-      display: none; }
-header ul .dropdown.open ul, header ul .dropdown:hover ul {
-    position: absolute;
-    width: 100px; }
-header ul .dropdown.open ul > li, header ul .dropdown.open ul a, header ul .dropdown:hover ul > li, header ul .dropdown:hover ul a {
-      margin-left: -25px;
-      width: 100px;
-      background: white;
-      display: block;
-      padding: 4px;
-      margin-top: -1px;
-      border: 1px solid grey; }
-header ul .dropdown.open ul > li:hover, header ul .dropdown.open ul a:hover, header ul .dropdown:hover ul > li:hover, header ul .dropdown:hover ul a:hover {
-        color: black;
-        background: #FF8300; }
-header ul .dropdown.open ul > li:last-of-type, header ul .dropdown.open ul a:last-of-type, header ul .dropdown:hover ul > li:last-of-type, header ul .dropdown:hover ul a:last-of-type {
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px; }
-header ul .dropdown.open ul > li:nth-of-type(2), header ul .dropdown.open ul a:nth-of-type(2), header ul .dropdown:hover ul > li:nth-of-type(2), header ul .dropdown:hover ul a:nth-of-type(2) {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px; }
-header ul .dropdown.open ul a li, header ul .dropdown:hover ul a li {
-      margin: 2.5px 5px;
-      display: block; }
-header ul .dropdown.open ul a, header ul .dropdown:hover ul a {
-      padding: 0px; }
-header ul .dropdown.open ul a:nth-of-type(2), header ul .dropdown:hover ul a:nth-of-type(2) {
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px; }
-header ul .dropdown.open ul a:nth-of-type(1), header ul .dropdown:hover ul a:nth-of-type(1) {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px; }
-header ul .dropdown.open ul .hide, header ul .dropdown.open ul .hide:hover, header ul .dropdown:hover ul .hide, header ul .dropdown:hover ul .hide:hover {
-      border: none;
-      background: none; }
-header ul .dropdown.open ul .subdropdown, header ul .dropdown:hover ul .subdropdown {
-      display: none; }
-header ul .dropdown.open ul .subdrop:hover .subdropdown, header ul .dropdown:hover ul .subdrop:hover .subdropdown {
-      display: block; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    list-style: none;
+    float: right;
+    text-align: center; }
+header ul.main li {
+      margin-top: 10px;
+      margin-left: 25px; }
+header ul.main .dropdown {
+      cursor: default; }
+header ul.main .dropdown ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+header ul.main .dropdown ul li {
+          display: none; }
+header ul.main .dropdown.open ul, header ul.main .dropdown:hover ul {
+        position: absolute;
+        width: 100px; }
+header ul.main .dropdown.open ul > li, header ul.main .dropdown.open ul a, header ul.main .dropdown:hover ul > li, header ul.main .dropdown:hover ul a {
+          margin-left: -25px;
+          width: 100px;
+          background: white;
+          display: block;
+          padding: 4px;
+          margin-top: -1px;
+          border: 1px solid grey; }
+header ul.main .dropdown.open ul > li:hover, header ul.main .dropdown.open ul a:hover, header ul.main .dropdown:hover ul > li:hover, header ul.main .dropdown:hover ul a:hover {
+            color: black;
+            background: #FF8300; }
+header ul.main .dropdown.open ul > li:last-of-type, header ul.main .dropdown.open ul a:last-of-type, header ul.main .dropdown:hover ul > li:last-of-type, header ul.main .dropdown:hover ul a:last-of-type {
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px; }
+header ul.main .dropdown.open ul > li:nth-of-type(2), header ul.main .dropdown.open ul a:nth-of-type(2), header ul.main .dropdown:hover ul > li:nth-of-type(2), header ul.main .dropdown:hover ul a:nth-of-type(2) {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px; }
+header ul.main .dropdown.open ul a li, header ul.main .dropdown:hover ul a li {
+          margin: 2.5px 5px;
+          display: block; }
+header ul.main .dropdown.open ul a, header ul.main .dropdown:hover ul a {
+          padding: 0px; }
+header ul.main .dropdown.open ul a:nth-of-type(2), header ul.main .dropdown:hover ul a:nth-of-type(2) {
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px; }
+header ul.main .dropdown.open ul a:nth-of-type(1), header ul.main .dropdown:hover ul a:nth-of-type(1) {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px; }
+header ul.main .dropdown.open ul .hide, header ul.main .dropdown.open ul .hide:hover, header ul.main .dropdown:hover ul .hide, header ul.main .dropdown:hover ul .hide:hover {
+          border: none;
+          background: none; }
+header ul.main .dropdown.open ul .subdropdown, header ul.main .dropdown:hover ul .subdropdown {
+          display: none; }
+header ul.main .dropdown.open ul .subdrop:hover .subdropdown, header ul.main .dropdown:hover ul .subdrop:hover .subdropdown {
+          display: block; }
 header .subdropdown {
-  display: none; }
+    display: none; }
 .donate {
   margin-right: 30px; }
 @media only screen and (max-width: 970px) {
-  ul.main {
-    border: 1px solid red;
-    width: 150px;
-    margin-right: -30px;
-    display: none; }
   .logo1 {
     display: none; }
   div.hamburger {
-    width: 1.5em;
-    height: 1.5em;
-    padding: 0.3em;
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
     background-color: #FF8300;
     cursor: pointer;
-    margin: 15px 0 0 calc(100% - 1.5em - 20px); }
+    margin: 10px 0 0 calc(100% - 1.5em - 35px); }
     div.hamburger div {
       background-color: white;
-      width: 1.5em;
-      height: 0.3em;
-      margin-bottom: 0.3em;
+      width: 2em;
+      height: 0.4em;
+      margin-bottom: 0.4em;
       -webkit-transition: all 0.2s ease-out;
       transition: all 0.2s ease-out; }
-    div.hamburger.open .top, div.hamburger:hover .top {
-      -webkit-transform: translateY(0.6em) rotate(45deg);
-              transform: translateY(0.6em) rotate(45deg); }
-    div.hamburger.open .mid, div.hamburger:hover .mid {
+    div.hamburger.open .top {
+      -webkit-transform: translateY(0.8em) rotate(45deg);
+              transform: translateY(0.8em) rotate(45deg); }
+    div.hamburger.open .mid {
       opacity: 0; }
-    div.hamburger.open .bottom, div.hamburger:hover .bottom {
-      -webkit-transform: translateY(-0.6em) rotate(-45deg);
-              transform: translateY(-0.6em) rotate(-45deg); }
-    div.hamburger.open ul, div.hamburger:hover ul {
-      position: absolute;
-      right: 15px;
-      top: 30px;
-      padding: 10px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: column-reverse;
-              flex-direction: column-reverse;
-      list-style: none;
-      text-align: center; }
-      div.hamburger.open ul li, div.hamburger:hover ul li {
-        margin-top: 3.5px;
-        width: 100px; }
-      div.hamburger.open ul #button, div.hamburger:hover ul #button {
-        width: 60px;
-        border-radius: 0px;
-        box-shadow: none;
-        margin-left: -10px; }
-      div.hamburger.open ul .dropdown, div.hamburger:hover ul .dropdown {
-        margin-bottom: -5px; }
-        div.hamburger.open ul .dropdown ul, div.hamburger:hover ul .dropdown ul {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column; }
-          div.hamburger.open ul .dropdown ul li, div.hamburger:hover ul .dropdown ul li {
-            display: none; }
-        div.hamburger.open ul .dropdown.open ul, div.hamburger.open ul .dropdown:hover ul, div.hamburger:hover ul .dropdown.open ul, div.hamburger:hover ul .dropdown:hover ul {
-          padding: 5px;
-          padding-right: 7px;
+    div.hamburger.open .bottom {
+      -webkit-transform: translateY(-0.8em) rotate(-45deg);
+              transform: translateY(-0.8em) rotate(-45deg); }
+  ul.main {
+    display: none !important; }
+  ul.mainopen {
+    background: white;
+    margin-right: 15px;
+    width: 60vw;
+    padding-left: 0px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+    list-style: none;
+    float: right;
+    text-align: center; }
+    ul.mainopen li {
+      border: 1px solid #FF8300;
+      padding: 10px 0;
+      margin: 0 !important;
+      margin-bottom: -1px  !important; }
+      ul.mainopen li:hover {
+        color: black;
+        background: #FF8300; }
+    ul.mainopen .topmenu {
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px; }
+    ul.mainopen .bottommenu {
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px; }
+    ul.mainopen .dropdown {
+      margin: 0 0 -1px 0 !important; }
+      ul.mainopen .dropdown div {
+        display: none; }
+      ul.mainopen .dropdown ul {
+        padding-left: 0px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        ul.mainopen .dropdown ul li {
+          display: none; }
+      ul.mainopen .dropdown.open div, ul.mainopen .dropdown:hover div {
+        display: block; }
+      ul.mainopen .dropdown.open ul, ul.mainopen .dropdown:hover ul {
+        position: absolute;
+        margin-top: -30px !important;
+        right: calc(60vw + 0px);
+        width: 30vw  !important;
+        padding-top: 5px !important; }
+        ul.mainopen .dropdown.open ul > li, ul.mainopen .dropdown.open ul a, ul.mainopen .dropdown:hover ul > li, ul.mainopen .dropdown:hover ul a {
+          margin-left: 0px;
+          overflow: hidden;
+          width: 35vw !important;
+          background: white;
+          display: block;
+          padding: 8px  !important;
+          margin-top: -1px;
+          border: 1px solid grey; }
+          ul.mainopen .dropdown.open ul > li:hover, ul.mainopen .dropdown.open ul a:hover, ul.mainopen .dropdown:hover ul > li:hover, ul.mainopen .dropdown:hover ul a:hover {
+            color: black;
+            background: #FF8300; }
+          ul.mainopen .dropdown.open ul > li:last-of-type, ul.mainopen .dropdown.open ul a:last-of-type, ul.mainopen .dropdown:hover ul > li:last-of-type, ul.mainopen .dropdown:hover ul a:last-of-type {
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px; }
+          ul.mainopen .dropdown.open ul > li:nth-of-type(2), ul.mainopen .dropdown.open ul a:nth-of-type(2), ul.mainopen .dropdown:hover ul > li:nth-of-type(2), ul.mainopen .dropdown:hover ul a:nth-of-type(2) {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px; }
+        ul.mainopen .dropdown.open ul a li, ul.mainopen .dropdown:hover ul a li {
+          border: none;
+          padding: 0px;
+          margin: 8px 10px !important;
+          display: block; }
+        ul.mainopen .dropdown.open ul a, ul.mainopen .dropdown:hover ul a {
+          padding: 0 !important;
+          margin: 0 !important; }
+          ul.mainopen .dropdown.open ul a:nth-of-type(2), ul.mainopen .dropdown:hover ul a:nth-of-type(2) {
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px; }
+          ul.mainopen .dropdown.open ul a:nth-of-type(1), ul.mainopen .dropdown:hover ul a:nth-of-type(1) {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px; }
+        ul.mainopen .dropdown.open ul .hide, ul.mainopen .dropdown.open ul .hide:hover, ul.mainopen .dropdown:hover ul .hide, ul.mainopen .dropdown:hover ul .hide:hover {
+          border: none;
+          background: none; }
+        ul.mainopen .dropdown.open ul .subdropdown, ul.mainopen .dropdown:hover ul .subdropdown {
+          display: none; }
+        ul.mainopen .dropdown.open ul .subdrop:hover .subdropdown, ul.mainopen .dropdown:hover ul .subdrop:hover .subdropdown {
           position: absolute;
-          width: 100px;
-          right: 132px; }
-          div.hamburger.open ul .dropdown.open ul > li, div.hamburger.open ul .dropdown.open ul a, div.hamburger.open ul .dropdown:hover ul > li, div.hamburger.open ul .dropdown:hover ul a, div.hamburger:hover ul .dropdown.open ul > li, div.hamburger:hover ul .dropdown.open ul a, div.hamburger:hover ul .dropdown:hover ul > li, div.hamburger:hover ul .dropdown:hover ul a {
-            margin: 0;
-            display: block;
-            margin-top: -1px; }
-          div.hamburger.open ul .dropdown.open ul .subdrop, div.hamburger.open ul .dropdown:hover ul .subdrop, div.hamburger:hover ul .dropdown.open ul .subdrop, div.hamburger:hover ul .dropdown:hover ul .subdrop {
-            margin-top: 20px;
-            margin-left: -10px; }
-          div.hamburger.open ul .dropdown.open ul a li, div.hamburger.open ul .dropdown:hover ul a li, div.hamburger:hover ul .dropdown.open ul a li, div.hamburger:hover ul .dropdown:hover ul a li {
-            margin: 2.5px 0;
-            border: none;
-            display: block; }
-          div.hamburger.open ul .dropdown.open ul .hide, div.hamburger.open ul .dropdown.open ul .hide:hover, div.hamburger.open ul .dropdown:hover ul .hide, div.hamburger.open ul .dropdown:hover ul .hide:hover, div.hamburger:hover ul .dropdown.open ul .hide, div.hamburger:hover ul .dropdown.open ul .hide:hover, div.hamburger:hover ul .dropdown:hover ul .hide, div.hamburger:hover ul .dropdown:hover ul .hide:hover {
-            border: none;
-            background: none; }
-          div.hamburger.open ul .dropdown.open ul .subdropdown, div.hamburger.open ul .dropdown:hover ul .subdropdown, div.hamburger:hover ul .dropdown.open ul .subdropdown, div.hamburger:hover ul .dropdown:hover ul .subdropdown {
-            display: none; }
-          div.hamburger.open ul .dropdown.open ul .subdrop:hover .subdropdown, div.hamburger.open ul .dropdown:hover ul .subdrop:hover .subdropdown, div.hamburger:hover ul .dropdown.open ul .subdrop:hover .subdropdown, div.hamburger:hover ul .dropdown:hover ul .subdrop:hover .subdropdown {
-            display: block;
-            margin-right: -20px; }
-    div.hamburger.open .donate, div.hamburger:hover .donate {
-      border-radius: 20px !important;
-      margin: 5px 0 0 15px !important; } }
+          right: 25px;
+          top: 65px;
+          display: block; }
+    ul.mainopen .donate {
+      margin-top: 5px !important;
+      margin-right: 0px; } }
 h2, h3, h4 {
   text-align: center;
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); }
