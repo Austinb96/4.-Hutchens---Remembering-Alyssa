@@ -413,8 +413,10 @@ ul #button {
 header ul a {
   color: black; }
 #fb {
-  width: 36px;
-  height: 36px;
+  width: 36px !important;
+  height: 36px !important;
+  min-width: 36px !important;
+  min-height: 36px !important;
   position: fixed;
   right: 15px;
   bottom: 15px; }
@@ -525,6 +527,60 @@ header ul a {
   text-align: center;
   margin: 0 auto;
   width: 800px; }
+@media only screen and (max-width: 970px) {
+  #butterfly1, #butterfly2 {
+    display: none; }
+  .headerimg, #bigarc {
+    width: 96vw;
+    margin: 0 auto; }
+  #logo2, #logosmall, img, .pic {
+    width: auto !important;
+    height: auto !important;
+    max-width: calc(60% - 275px);
+    min-width: 128px;
+    max-height: calc(70% - 439px); }
+  #logo2, #logosmall, #bigarc, #newsheader img {
+    max-width: 90%;
+    max-height: 80%; }
+  #event {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100vw !important;
+    height: 50vw !important;
+    max-width: 640px;
+    max-height: 364px; }
+  #eventpic {
+    max-width: 55vw;
+    max-height: 25vw; }
+  .pic {
+    min-width: 275px; }
+    .pic img {
+      margin-bottom: -15px;
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 100% !important;
+      max-height: 100% !important; }
+  #newsheader img {
+    min-height: 409px;
+    min-width: 90vw; } }
+@media only screen and (max-width: 640px) {
+  .headerimg {
+    padding-top: 15px; }
+  #logosmall, img, .pic {
+    width: auto !important;
+    height: auto !important;
+    max-width: 40vw;
+    max-height: 70vw; }
+  #logosmall, #bigarc {
+    max-width: 100%;
+    max-height: 90%; }
+  #eventpic {
+    max-width: 65vw;
+    max-height: 35vw; }
+  #newsheader img {
+    min-width: 95vw; }
+  .pic {
+    min-width: 128px; } }
 #logosmall {
   width: 600px;
   height: 362px; }
@@ -805,3 +861,19 @@ div#contactinfo p.space {
 div#ourmissioncontent {
   margin: 0 auto;
   width: 640px; }
+@media only screen and (max-width: 970px) {
+  #ourmissionheader {
+    width: 100vw;
+    margin: 0; }
+  #ourmissioncontent, #homecontent, #eventcontent, #eventregister, #newscontent, #contactinfo {
+    width: 90vw !important;
+    margin-bottom: 50px !important; }
+  #eventcontent p {
+    width: 100%; }
+  #eventregister {
+    margin-bottom: 50px; }
+  #newsheader {
+    height: 409px;
+    padding-top: 15px; }
+  #contactinfo {
+    margin-top: 0 !important; } }
