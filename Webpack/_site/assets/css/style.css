@@ -541,6 +541,11 @@ header ul a {
 .rightimage {
   float: right;
   margin: 15px 0 15px 15px; }
+.scholarshipcontent {
+  text-align: center; }
+.scholarshipcontent img {
+    width: 640px;
+    height: auto; }
 @media only screen and (max-width: 970px) {
   #butterfly1, #butterfly2 {
     display: none; }
@@ -583,7 +588,9 @@ header ul a {
     max-width: 100%;
     max-height: 100%;
     min-width: 100%;
-    min-height: 100%; } }
+    min-height: 100%; }
+  .scholarshipcontent img {
+    max-width: 80%; } }
 @media only screen and (max-width: 640px) {
   .headerimg {
     padding-top: 15px; }
@@ -936,6 +943,16 @@ ul.givingtext li.givingh, ul.givingimg li.givingh, ul.givingtrig li.givingh {
   border-bottom: none !important; }
 .hide {
   display: none; }
+.scholarshipcontent {
+  clear: left;
+  width: 95vw;
+  margin: 100px auto; }
+.scholarshipcontent p {
+    text-align: left;
+    width: 640px;
+    margin: 0 auto; }
+.scholarshipcontent img {
+    margin-bottom: 25px; }
 @media only screen and (max-width: 970px) {
   #ourmissionheader {
     width: 100vw;
@@ -943,7 +960,7 @@ ul.givingtext li.givingh, ul.givingimg li.givingh, ul.givingtrig li.givingh {
   #ourmissioncontent, #homecontent, #eventcontent, #eventregister, #newscontent, #contactinfo, #ourgivingcontent {
     width: 90vw !important;
     margin-bottom: 50px !important; }
-  #eventcontent p {
+  #eventcontent p, .scholarshipcontent p {
     width: 100%; }
   #eventregister {
     margin-bottom: 50px; }
