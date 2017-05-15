@@ -527,6 +527,15 @@ header ul a {
   text-align: center;
   margin: 0 auto;
   width: 800px; }
+.leftimage, .rightimage {
+  box-shadow: 3px 3px 5px grey;
+  margin-right: 15px;
+  float: left;
+  width: 240px;
+  height: auto; }
+.rightimage {
+  float: right;
+  margin: 15px 0 15px 15px; }
 @media only screen and (max-width: 970px) {
   #butterfly1, #butterfly2 {
     display: none; }
@@ -552,6 +561,8 @@ header ul a {
   #eventpic {
     max-width: 55vw;
     max-height: 25vw; }
+  .selectioncontent img {
+    max-width: 275px; }
   .pic {
     min-width: 275px; }
     .pic img {
@@ -566,7 +577,7 @@ header ul a {
 @media only screen and (max-width: 640px) {
   .headerimg {
     padding-top: 15px; }
-  #logosmall, img, .pic {
+  #logosmall, img, .pic, .selectioncontent img {
     width: auto !important;
     height: auto !important;
     max-width: 40vw;
@@ -579,7 +590,7 @@ header ul a {
     max-height: 35vw; }
   #newsheader img {
     min-width: 95vw; }
-  .pic {
+  .pic, .selectioncontent img {
     min-width: 128px; } }
 #logosmall {
   width: 600px;
@@ -861,11 +872,55 @@ div#contactinfo p.space {
 div#ourmissioncontent {
   margin: 0 auto;
   width: 640px; }
+#ourgivingcontent {
+  margin: 0 auto;
+  width: 640px; }
+ul.givingtext, ul.givingimg, ul.givingtrig {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0; }
+ul.givingtext li, ul.givingimg li, ul.givingtrig li {
+    box-shadow: 3px 3px 5px grey, inset 0 -1px 1px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    list-style-type: none;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    overflow: hidden; }
+ul.givingtext li:hover, ul.givingimg li:hover, ul.givingtrig li:hover {
+      cursor: pointer;
+      box-shadow: none; }
+ul.givingtext li.givingh, ul.givingimg li.givingh, ul.givingtrig li.givingh {
+    box-shadow: none;
+    border: none;
+    text-align: center;
+    height: auto;
+    margin-bottom: -25px; }
+.selectioncontent {
+  padding: 15px;
+  border: 10px solid #FF8300;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px grey; }
+#triangle-up {
+  z-index: -1;
+  box-shadow: none;
+  margin-top: -50px;
+  margin-bottom: -24px;
+  width: 200px;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 80px solid #FF8300; }
+.hidet {
+  border-bottom: none !important; }
+.hide {
+  display: none; }
 @media only screen and (max-width: 970px) {
   #ourmissionheader {
     width: 100vw;
     margin: 0; }
-  #ourmissioncontent, #homecontent, #eventcontent, #eventregister, #newscontent, #contactinfo {
+  #ourmissioncontent, #homecontent, #eventcontent, #eventregister, #newscontent, #contactinfo, #ourgivingcontent {
     width: 90vw !important;
     margin-bottom: 50px !important; }
   #eventcontent p {
