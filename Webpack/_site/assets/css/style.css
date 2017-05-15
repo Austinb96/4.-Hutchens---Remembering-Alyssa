@@ -867,22 +867,25 @@ div#contactinfo p.space {
 #media2016 {
   clear: right;
   text-align: center;
-  width: 1200px;
+  width: 95vw;
   margin: 0 auto;
-  padding-top: 100px; }
-#media2016 #vid1, #media2016 #vid2 {
-    padding: 15px;
-    width: 500px;
-    height: 350px; }
+  padding-top: 25px; }
+#media2016 #videos {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%; }
+#media2016 #videos #vid1, #media2016 #videos #vid2 {
+      margin: 15px auto; }
 #mediabuttons {
-  width: 640px;
-  margin: 0 auto; }
-#mediabuttons p {
-    position: absolute;
-    float: left;
-    margin-top: 25px; }
-#mediabuttons #button.alb2 {
-    left: calc(50% + 100px); }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0px auto; }
+#mediabuttons a {
+    margin: 25px auto; }
 #newscontent {
   margin: 0 auto;
   width: 640px; }
@@ -953,11 +956,20 @@ ul.givingtext li.givingh, ul.givingimg li.givingh, ul.givingtrig li.givingh {
     margin: 0 auto; }
 .scholarshipcontent img {
     margin-bottom: 25px; }
+#sponsorcontent {
+  width: 640px;
+  margin: 50px auto; }
+.becomesponsor p {
+  text-align: center;
+  margin: 0; }
+.becomesponsor ul {
+  list-style-type: none;
+  font-size: 1.2em; }
 @media only screen and (max-width: 970px) {
   #ourmissionheader {
     width: 100vw;
     margin: 0; }
-  #ourmissioncontent, #homecontent, #eventcontent, #eventregister, #newscontent, #contactinfo, #ourgivingcontent {
+  #ourmissioncontent, #homecontent, #eventcontent, #eventregister, #newscontent, #contactinfo, #ourgivingcontent, #shirtheader {
     width: 90vw !important;
     margin-bottom: 50px !important; }
   #eventcontent p, .scholarshipcontent p {
@@ -968,4 +980,14 @@ ul.givingtext li.givingh, ul.givingimg li.givingh, ul.givingtrig li.givingh {
     height: 409px;
     padding-top: 15px; }
   #contactinfo {
-    margin-top: 0 !important; } }
+    margin-top: 0 !important; }
+  #videos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%; } }
+#mediabuttons p {
+  width: 10vw;
+  min-width: 80px;
+  max-width: 150px; }
