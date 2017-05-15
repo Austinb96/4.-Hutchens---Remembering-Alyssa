@@ -590,7 +590,9 @@ header ul a {
     min-width: 100%;
     min-height: 100%; }
   .scholarshipcontent img {
-    max-width: 80%; } }
+    max-width: 80%; }
+  #family {
+    max-width: 70%; } }
 @media only screen and (max-width: 640px) {
   .headerimg {
     padding-top: 15px; }
@@ -821,11 +823,13 @@ h2, h3, h4 {
   overflow: hidden;
   height: 300px; }
 #donatetop {
-  width: 50%;
+  width: 60vw;
+  max-width: 1000px;
   display: block;
   margin: 0 auto; }
 #donatetop p {
     width: calc(100% - 350px);
+    max-width: 600px;
     margin-top: 5%;
     float: right; }
 #donations form {
@@ -1010,8 +1014,26 @@ input[type=number] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%; } }
-#mediabuttons p {
-  width: 10vw;
-  min-width: 80px;
-  max-width: 150px; }
+    width: 100%; }
+  #mediabuttons p {
+    width: 10vw;
+    min-width: 80px;
+    max-width: 150px; }
+  #donatetop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 95vw; }
+    #donatetop img {
+      margin: 0 auto; }
+    #donatetop p {
+      margin: 0 auto;
+      width: 60%;
+      margin-top: 5%;
+      float: right; }
+  #donations form {
+    margin-top: 0; } }
