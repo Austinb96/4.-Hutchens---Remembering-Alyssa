@@ -552,7 +552,7 @@ header ul a {
   .headerimg, #bigarc {
     width: 96vw;
     margin: 0 auto; }
-  #logo2, #logosmall, img, .pic {
+  #logo2, #logosmall, img:not(.exclude), .pic {
     width: auto !important;
     height: auto !important;
     max-width: calc(60% - 275px);
@@ -594,12 +594,12 @@ header ul a {
 @media only screen and (max-width: 640px) {
   .headerimg {
     padding-top: 15px; }
-  #logosmall, img, .pic, .selectioncontent img {
+  #logosmall, img, .pic, .selectioncontent img, #shirt {
     width: auto !important;
     height: auto !important;
     max-width: 40vw;
     max-height: 70vw; }
-  #logosmall, #bigarc {
+  #logosmall, #bigarc, #shirt {
     max-width: 100%;
     max-height: 90%; }
   #eventpic {
@@ -608,7 +608,9 @@ header ul a {
   #newsheader img {
     min-width: 95vw; }
   .pic, .selectioncontent img {
-    min-width: 128px; } }
+    min-width: 128px; }
+  #shirt {
+    min-width: 60vw; } }
 #logosmall {
   width: 600px;
   height: 362px; }
@@ -965,11 +967,33 @@ ul.givingtext li.givingh, ul.givingimg li.givingh, ul.givingtrig li.givingh {
 .becomesponsor ul {
   list-style-type: none;
   font-size: 1.2em; }
+#shirtheader {
+  clear: left;
+  width: 60vw;
+  margin: 0 auto; }
+#shirtheader img {
+    width: 100%; }
+.shirtcontent {
+  text-align: center;
+  margin: 0 auto; }
+.shirtcontent p {
+    margin: 0; }
+.shirtcontent form {
+    display: block;
+    margin: 0 auto; }
+.shirtcontent form table {
+      margin: 0 auto; }
+.buy {
+  margin-top: 15px; }
+input[type=number] {
+  width: 35px; }
+.shirtcontent {
+  margin-bottom: 50px; }
 @media only screen and (max-width: 970px) {
   #ourmissionheader {
     width: 100vw;
     margin: 0; }
-  #ourmissioncontent, #homecontent, #eventcontent, #eventregister, #newscontent, #contactinfo, #ourgivingcontent, #shirtheader {
+  #ourmissioncontent, #homecontent, #eventcontent, #eventregister, #newscontent, #contactinfo, #ourgivingcontent, #shirtcontent {
     width: 90vw !important;
     margin-bottom: 50px !important; }
   #eventcontent p, .scholarshipcontent p {

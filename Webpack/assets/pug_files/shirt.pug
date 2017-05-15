@@ -14,7 +14,69 @@ html(lang='en')
     header
       include includes/menu.pug
     div#shirtheader
-      img(src="assets/img/shirt.jpg")#shirt
+      img(src="assets/img/shirt.jpg")#shirt.exclude
+    div.shirtcontent
+      form(target='paypal', action='https://www.paypal.com/cgi-bin/webscr', method='post')
+        input(type='hidden', name='cmd', value='_s-xclick')
+        input(type='hidden', name='hosted_button_id', value='U5USATFFSDGYC')
+        table
+          tr
+            td
+              h4 Unisex Adult Alyssa's Ride
+              p Safty Green
+              p Short Sleeve Shirt
+              input(type='hidden', name='on0', value='Shirt Size')
+            
+          tr
+            td
+              select(name='os0')
+                option(value='Small') Small $10.00 USD
+                option(value='Medium') Medium $10.00 USD
+                option(value='Large') Large $10.00 USD
+                option(value='Extra Large') Extra Large $10.00 USD
+                option(value='2X') 2X $12.00 USD
+                option(value='3X') 3X $14.00 USD
+                option(value='4X') 4X $14.00 USD
+        table
+          tr
+            td Quantity:
+          tr
+            td
+              input(type='number', name='quantity', value='1')
+
+        input(type='hidden', name='currency_code', value='USD')
+        input(class='buy', type='image', src='https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif?akam_redir=1', border='0', name='submit', alt='PayPal - The safer, easier way to pay online!')
+        img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif', width='1', height='1' class='exclude')
+      form(target='paypal', action='https://www.paypal.com/cgi-bin/webscr', method='post')
+        input(type='hidden', name='cmd', value='_s-xclick')
+        input(type='hidden', name='hosted_button_id', value='YGCQ2VS4DCTZE')
+        table
+          tr
+            td
+              h4 Unisex Youth Alyssa's Ride
+              p Safty Green
+              p Short Sleeve Shirt
+              input(type='hidden', name='on0', value='Shirt Size')
+              
+          tr
+            td
+              select(name='os0')
+                option(value='Small - 6/8') Small - 6/8 $10.00 USD
+                option(value='Medium - 10/12') Medium - 10/12 $10.00 USD
+                option(value='Large - 14/16') Large - 14/16 $10.00 USD
+                option(value='X-Large - 18/20') X-Large - 18/20 $10.00 USD
+        table
+          tr
+            td Quantity:
+          tr
+            td
+              input(type='number', name='quantity', value='1')
+        input(type='hidden', name='currency_code', value='USD')
+        input(class='buy', type='image', src='https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif?akam_redir=1', border='0', name='submit', alt='PayPal - The safer, easier way to pay online!')
+        img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif', width='1', height='1' class='exclude')
+
+
+
   a(href="https://www.facebook.com/Remembering-Alyssa-931441953599142/", target="_blank"): img(src="assets/img/fb.jpg")#fb
   script(src='assets/js/functions.js')
   script.

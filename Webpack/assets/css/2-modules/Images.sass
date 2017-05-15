@@ -163,7 +163,7 @@
   .headerimg, #bigarc
     width: 96vw
     margin: 0 auto
-  #logo2, #logosmall, img, .pic
+  #logo2, #logosmall, img:not(.exclude), .pic
     width: auto !important
     height: auto !important
     max-width: calc(60% - 275px)
@@ -206,12 +206,12 @@
 @include phones
   .headerimg
     padding-top: 15px
-  #logosmall, img, .pic, .selectioncontent img
+  #logosmall, img, .pic, .selectioncontent img, #shirt
     width: auto !important
     height: auto !important
     max-width: 40vw
     max-height: 70vw
-  #logosmall, #bigarc
+  #logosmall, #bigarc, #shirt
     max-width: 100%
     max-height: 90%
   #eventpic
@@ -222,3 +222,5 @@
       min-width: 95vw
   .pic , .selectioncontent img
     min-width: 128px
+  #shirt
+    min-width: 60vw
