@@ -67,17 +67,18 @@
 
 //Event//
 #event
-  width: 674px
-  height: 500px
   margin-top: 100px
 
 #eventheader
+  position: relative
   clear: left
   text-align: center
   margin-top: 50px
   img
     margin-top: 0
+    height: 500px
     width: 100%
+    background: #E8FF0D
 
 #eventpic
   padding-right: 15px
@@ -100,8 +101,10 @@
   margin-top: 100px
   text-align: center
   clear: right
+  background: black
   img
-    width: 100%
+    width: 45%
+    max-width: 1200px
     height: 409px
     outline-offset: -30px
 #newspic1,#newspic2, #newspic3, #newspic4
@@ -178,12 +181,7 @@
     max-width: 90%
     max-height: 80%
   #event
-    margin-top: 15px
-    margin-bottom: 15px
-    width: 100vw !important
-    height: 50vw !important
-    max-width: 640px
-    max-height: 364px
+    max-width: 100vw !important
   #eventpic
     max-width: 55vw
     max-height: 25vw
@@ -199,8 +197,9 @@
       max-width: 100% !important
       max-height: 100% !important
   #newsheader
-    min-height: 409px
-    min-width: 90vw
+    height: 40vw !important
+    img
+      width: 50% !important
   .givingimg img
     max-width: 100%
     max-height: 100%
