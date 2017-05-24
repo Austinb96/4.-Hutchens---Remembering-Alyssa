@@ -471,6 +471,7 @@ header ul a {
 #event {
   margin-top: 100px; }
 #eventheader {
+  z-index: -1;
   position: relative;
   clear: left;
   text-align: center;
