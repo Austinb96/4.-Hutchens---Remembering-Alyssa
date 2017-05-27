@@ -971,6 +971,12 @@ ul.givingtext li.givingh, ul.givingimg li.givingh, ul.givingtrig li.givingh {
   width: 40%;
   float: right;
   font-style: italic; }
+.weber {
+  height: 60vh !important;
+  width: auto !important; }
+.derek {
+  height: 40vh !important;
+  width: auto !important; }
 #sponsorcontent {
   width: 640px;
   margin: 50px auto; }
