@@ -119,49 +119,50 @@ header
         padding-left: 0px
         display: flex
         flex-direction: column
-        li
+        position: absolute
+        margin-top: -30px !important
+        right: calc(60vw + 0px)
+        width: 30vw  !important
+        padding-top: 5px !important
+        >li,a
+          margin-left: 0px
+          overflow: hidden
+          width: 35vw !important
+          background: white
+          padding: 8px  !important
+          margin-top: -1px
+          border: 1px solid grey
           display: none
+          &:last-of-type
+            border-bottom-left-radius: 20px
+            border-bottom-right-radius: 20px
+          &:nth-of-type(2)
+            border-top-left-radius: 20px
+            border-top-right-radius: 20px
+        a li
+          border: none
+          padding: 0px
+          margin: 8px 10px !important
+        a
+          padding: 0 !important
+          margin: 0 !important
+          &:nth-of-type(2)
+            border-top-left-radius: 0px
+            border-top-right-radius: 0px
+          &:nth-of-type(1)
+            border-top-left-radius: 20px
+            border-top-right-radius: 20px
       &.open, &:hover
         div
           display: block
         ul
-          position: absolute
-          margin-top: -30px !important
-          right: calc(60vw + 0px)
-          width: 30vw  !important
-          padding-top: 5px !important
           >li , a
-            margin-left: 0px
-            overflow: hidden
-            width: 35vw !important
-            background: white
-            display: block
-            padding: 8px  !important
-            margin-top: -1px
-            border: 1px solid grey
             &:hover
               color: black
               background: $primary-color
-            &:last-of-type
-              border-bottom-left-radius: 20px
-              border-bottom-right-radius: 20px
-            &:nth-of-type(2)
-              border-top-left-radius: 20px
-              border-top-right-radius: 20px
           a li
-            border: none
-            padding: 0px
-            margin: 8px 10px !important
             display: block
-          a
-            padding: 0 !important
-            margin: 0 !important
-            &:nth-of-type(2)
-              border-top-left-radius: 0px
-              border-top-right-radius: 0px
-            &:nth-of-type(1)
-              border-top-left-radius: 20px
-              border-top-right-radius: 20px
+
           .hide , .hide:hover
             border: none
             background: none
@@ -176,3 +177,5 @@ header
     .donate
       margin-top: 5px !important
       margin-right: 0px
+.opensub
+  display: block !important
