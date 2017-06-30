@@ -410,6 +410,13 @@ ul #button {
   box-shadow: none; }
 header ul a {
   color: black; }
+.sponsordonation form {
+  margin-top: 15px !important; }
+#inform {
+  text-align: center;
+  width: 70%;
+  font-size: 1.2em;
+  margin: 15px auto; }
 #fb {
   width: 36px !important;
   height: 36px !important;
@@ -891,7 +898,12 @@ input#button {
 #eventregister a {
     padding-bottom: 50px; }
 .inform {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  max-width: 80%;
+  margin: 0 auto; }
+.inform .red {
+    color: red;
+    text-decoration: underline; }
 div#contactinfo {
   text-align: center;
   width: 640px;
@@ -1011,6 +1023,8 @@ ul.givingtext li.givingh, ul.givingimg li.givingh, ul.givingtrig li.givingh {
 .becomesponsor ul {
   list-style-type: none;
   font-size: 1.2em; }
+.sponsorbuttons {
+  margin-bottom: 25px; }
 #shirtheader {
   clear: left;
   width: 60vw;
