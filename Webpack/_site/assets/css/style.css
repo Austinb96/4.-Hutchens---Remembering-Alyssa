@@ -556,6 +556,8 @@ header ul a {
   text-align: center; }
 .sponsorlogos img {
     max-width: 30%; }
+.sponsorlogos .textlogo p {
+    font-size: 2em; }
 @media only screen and (max-width: 970px) {
   #butterfly1, #butterfly2 {
     display: none; }
