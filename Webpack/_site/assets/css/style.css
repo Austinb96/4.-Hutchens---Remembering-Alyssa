@@ -1025,6 +1025,8 @@ ul.givingtext li.givingh, ul.givingimg li.givingh, ul.givingtrig li.givingh {
   font-size: 1.2em; }
 .sponsorbuttons {
   margin-bottom: 25px; }
+.inform {
+  text-align: center; }
 #shirtheader {
   clear: left;
   width: 60vw;

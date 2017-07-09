@@ -50,8 +50,8 @@ html(lang='en')
         ul.sponsorbuttons
           a(href="https://docs.google.com/forms/d/e/1FAIpQLSczABpClVyoiO6Y1JA2-doveA8MoWh7ut8W6pXqaMIq9CLSpw/viewform?usp=sf_link", target="_blank"): li#button Online
           a(href="assets/files/Sponsor Form.pdf" download): li#button Mail-In
-          div#inform
-            b  Please use the donation button below if you filled out the form and need to pay
+          div.inform
+            b Please use the donation button below if you filled out the form and need to pay
           div#donations.sponsordonation
             form(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_blank')
               input(type='hidden', name='cmd', value='_s-xclick')
